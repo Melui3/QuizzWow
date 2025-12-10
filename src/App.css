@@ -1,0 +1,105 @@
+/* App.css */
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937; /* gris foncé */
+}
+
+/* Intro */
+.intro-container {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+.intro-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.intro-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    color: #d1d5db;
+}
+.intro-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.intro-button:hover {
+    background-color: #b91c1c;
+}
+
+/* Quizz */
+.quizz-container {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+.quizz-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.quizz-bestclass {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 1rem 0;
+}
+.quizz-image {
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+    margin: 1rem 0;
+}
+.quizz-description {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #d1d5db;
+}
+.quizz-button {
+    padding: 0.5rem 1.5rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.quizz-button:hover {
+    background-color: #1d4ed8;
+}
+.quizz-question-count {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.quizz-question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.quizz-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+.quizz-answer-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #374151;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+}
+.quizz-answer-button:hover {
+    background-color: #4b5563;
+}
