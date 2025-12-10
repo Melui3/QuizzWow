@@ -15,6 +15,7 @@ import evokerImg from '../assets/ClassIcon_evoker.webp';
 export const classes = [
     {
         id: 1,
+        key: 'Warrior',
         name: 'Guerrier',
         image: warriorImg,
         color: '#C79C6E',
@@ -22,6 +23,7 @@ export const classes = [
     },
     {
         id: 2,
+        key: 'Rogue',
         name: 'Voleur',
         image: rogueImg,
         color: '#FFF569',
@@ -29,6 +31,7 @@ export const classes = [
     },
     {
         id: 3,
+        key: 'Hunter',
         name: 'Chasseur',
         image: hunterImg,
         color: '#ABD473',
@@ -36,6 +39,7 @@ export const classes = [
     },
     {
         id: 4,
+        key: 'Mage',
         name: 'Mage',
         image: mageImg,
         color: '#69CCF0',
@@ -43,6 +47,7 @@ export const classes = [
     },
     {
         id: 5,
+        key: 'Warlock',
         name: 'Démoniste',
         image: warlockImg,
         color: '#9482C9',
@@ -50,6 +55,7 @@ export const classes = [
     },
     {
         id: 6,
+        key: 'Priest',
         name: 'Prêtre',
         image: priestImg,
         color: '#FFFFFF',
@@ -57,6 +63,7 @@ export const classes = [
     },
     {
         id: 7,
+        key: 'Shaman',
         name: 'Chaman',
         image: shamanImg,
         color: '#0070DE',
@@ -64,6 +71,7 @@ export const classes = [
     },
     {
         id: 8,
+        key: 'Druid',
         name: 'Druide',
         image: druidImg,
         color: '#FF7D0A',
@@ -71,6 +79,7 @@ export const classes = [
     },
     {
         id: 9,
+        key: 'DemonHunter',
         name: 'Chasseur de démons',
         image: demonhunterImg,
         color: '#A330C9',
@@ -78,6 +87,7 @@ export const classes = [
     },
     {
         id: 10,
+        key: 'Monk',
         name: 'Moine',
         image: monkImg,
         color: '#00FF96',
@@ -85,6 +95,7 @@ export const classes = [
     },
     {
         id: 11,
+        key: 'DeathKnight',
         name: 'Chevalier de la mort',
         image: deathKnightImg,
         color: '#C41F3B',
@@ -92,6 +103,7 @@ export const classes = [
     },
     {
         id: 12,
+        key: 'Paladin',
         name: 'Paladin',
         image: paladinImg,
         color: '#F58CBA',
@@ -99,6 +111,7 @@ export const classes = [
     },
     {
         id: 13,
+        key: 'Evoker',
         name: 'Evocateur',
         image: evokerImg,
         color: '#33937F',
@@ -106,6 +119,6 @@ export const classes = [
     }
 ];
 
-export function getClassByName(name) {
-    return classes.find(c => c.name === name);
+export function getClassByKey(key) {
+    return classes.find(c => c.key === key);
 }

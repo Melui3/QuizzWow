@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { quizzQuestions } from "../data/quizzQuestions.js";
-import { getClassByName } from "../data/classes.js";
+import {getClassByKey} from "../data/classes.js";
 
 
 export default function Quizz() {
@@ -32,7 +32,7 @@ export default function Quizz() {
                 winner = cls;
             }
         }
-        setBestClass(getClassByName(winner));
+        setBestClass(getClassByKey(winner));
         setFinished(true);
     }
 
